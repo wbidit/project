@@ -2,16 +2,16 @@ import { motion } from 'framer-motion';
 
 const educationData = [
   {
-    year: '2020 - 2024',
+    year: 'Expected Graduation: May 2025',
     degree: 'Bachelor of Technology in Computer Science',
-    institution: 'Silicon Institute of Technology, Bhubaneswar',
-    description: 'Specializing in software development and UI/UX design'
+    institution: 'National Institute of Science and Technology',
+    description: ''
   },
   {
-    year: '2018 - 2020',
-    degree: 'Higher Secondary Education',
-    institution: 'DAV Public School, Bhubaneswar',
-    description: 'Science stream with Computer Science'
+    year: 'Diploma in ITESM',
+    degree: 'Diploma in Information Technology Enabled Services & Management',
+    institution: 'Aditya Institute of Technology, New Delhi',
+    description: ''
   }
 ];
 
@@ -67,7 +67,7 @@ export default function Education() {
               {item.degree}
             </motion.h3>
             <p className="text-dark-200 mt-1">{item.institution}</p>
-            <p className="text-dark-300 mt-2">{item.description}</p>
+            {item.description && <p className="text-dark-300 mt-2">{item.description}</p>}
           </motion.div>
         ))}
       </div>
