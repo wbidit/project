@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <motion.nav
       style={{ opacity: navOpacity }}
-      className="fixed w-full z-50 px-6 py-4"
+      className="fixed w-full z-50 px-6 py-4 font-gladiola"
     >
       <div className="max-w-7xl mx-auto">
         <div className="backdrop-blur-md bg-dark-800/30 rounded-md shadow-lg px-6 py-4 border border-dark-700">
@@ -35,7 +35,7 @@ export default function Navbar() {
                   key={item}
                   href={`#${item.toLowerCase()}`}
                   whileHover={{ scale: 1.1 }}
-                  className="text-dark-200 hover:text-accent-primary transition-colors"
+                  className="text-dark-200 hover:text-accent-secondary transition-colors"
                 >
                   {item}
                 </motion.a>
@@ -72,7 +72,7 @@ export default function Navbar() {
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className="block text-dark-200 hover:text-accent-primary transition-colors"
+                  className="block text-dark-200 hover:text-accent-secondary transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {item}

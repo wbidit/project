@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <div className="text-center relative">
+    <div className="text-center relative font-gladiola">
       <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 blur-[120px] -z-10" />
       <motion.h1 
         initial={{ opacity: 0, y: 20 }}
@@ -13,9 +13,9 @@ export default function Hero() {
         <motion.span
           animate={{ 
             textShadow: [
-              "0 0 20px rgba(124, 58, 237, 0)",
-              "0 0 20px rgba(124, 58, 237, 0.5)",
-              "0 0 20px rgba(124, 58, 237, 0)"
+              "0 0 20px rgba(44, 62, 80, 0)",
+              "0 0 20px rgba(44, 62, 80, 0.3)",
+              "0 0 20px rgba(44, 62, 80, 0)"
             ]
           }}
           transition={{ 
@@ -37,7 +37,7 @@ export default function Hero() {
         <motion.p 
           className="text-xl md:text-2xl text-dark-300 mb-8"
           animate={{ 
-            color: ["#d8d9df", "#f7f7f8", "#d8d9df"]
+            color: ["#b6b8c2", "#d8d9df", "#b6b8c2"]
           }}
           transition={{ 
             duration: 3,

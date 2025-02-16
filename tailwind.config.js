@@ -17,12 +17,14 @@ export default {
           900: '#18181b',
         },
         accent: {
-          primary: '#7C3AED',
-          secondary: '#2DD4BF',
+          // More professional blue tones
+          primary: '#2c3e50',   // Dark blue-gray
+          secondary: '#3498db', // Professional blue
         }
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        gladiola: ['Gladiola', 'sans-serif'], // Added Gladiola font
       }
     },
   },
