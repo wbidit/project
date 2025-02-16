@@ -19,11 +19,11 @@ export default function Education() {
   return (
     <div className="max-w-4xl mx-auto py-16">
       <motion.h2 
-        className="text-3xl font-bold text-center mb-12 text-dark-50"
+        className="text-3xl font-bold text-center mb-12 text-glow"
         animate={{
           textShadow: [
             "0 0 20px rgba(124, 58, 237, 0)",
-            "0 0 20px rgba(124, 58, 237, 0.3)",
+            "0 0 20px rgba(124, 58, 237, 0.5)",
             "0 0 20px rgba(124, 58, 237, 0)"
           ]
         }}
@@ -44,30 +44,26 @@ export default function Education() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
             whileHover={{ 
-              scale: 1.02,
-              boxShadow: "0 0 20px rgba(124, 58, 237, 0.2)"
+              scale: 1.05,
+              boxShadow: "0 0 30px rgba(124, 58, 237, 0.3)"
             }}
-            className="bg-dark-800/30 backdrop-blur-md p-6 rounded-md shadow-lg border border-dark-700 hover:border-accent-primary/50 transition-all duration-300"
+            className="bg-dark-900/40 backdrop-blur-lg p-6 rounded-lg shadow-xl border border-accent-primary hover:border-accent-secondary transition-all duration-300"
           >
             <motion.span 
               className="text-xl font-bold text-accent-primary"
               whileHover={{
-                textShadow: "0 0 8px rgba(124, 58, 237, 0.5)"
+                textShadow: "0 0 12px rgba(124, 58, 237, 0.7)"
               }}
             >
               {item.year}
             </motion.span>
             <motion.h3 
-              className="text-lg font-semibold mt-2 text-dark-100"
-              whileHover={{
-                color: "#7C3AED",
-                transition: { duration: 0.2 }
-              }}
+              className="text-lg font-semibold mt-2 text-dark-100 hover:text-accent-secondary transition"
             >
               {item.degree}
             </motion.h3>
-            <p className="text-dark-200 mt-1">{item.institution}</p>
-            {item.description && <p className="text-dark-300 mt-2">{item.description}</p>}
+            <p className="text-dark-300 mt-1">{item.institution}</p>
+            {item.description && <p className="text-dark-400 mt-2">{item.description}</p>}
           </motion.div>
         ))}
       </div>
